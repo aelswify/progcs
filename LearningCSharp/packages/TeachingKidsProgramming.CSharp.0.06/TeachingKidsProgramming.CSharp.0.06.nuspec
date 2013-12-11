@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>TeachingKidsProgramming.CSharp</id>
+    <version>0.06</version>
+    <title>TeachingKidsProgramming.CSharp</title>
+    <authors>Llewellyn Falco,  Lynn Langit</authors>
+    <owners>Llewellyn Falco,  Lynn Langit</owners>
+    <iconUrl>https://lh4.googleusercontent.com/-W0cTOdgbeqo/URdEygwCV8I/AAAAAAAAABw/enqXhMjripI/s32/Icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Lessons and exercises to help kids learn to program</description>
+    <releaseNotes />
+    <copyright />
+    <language>en-US</language>
+  </metadata>
+</package>

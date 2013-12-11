@@ -1,0 +1,1329 @@
+<?xml version="1.0"?>
+<doc>
+	<assembly>
+		<name>SmallBasicFun</name>
+	</assembly>
+	<members>
+		<member name="T:SmallBasicFun.GiantTortoise">
+			<summary>
+				Special type of Tortoise to demonstrate large examples of recipes
+			</summary>
+		</member>
+		<member name="M:SmallBasicFun.GiantTortoise.Show">
+			<summary>
+				Displays the Gaint Tortoise
+
+				--- Example :GiantTortoise.Show()</summary>
+		</member>
+		<member name="M:SmallBasicFun.GiantTortoise.DrawShape(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				Creates a shape with a given number of sides, with a given color
+
+				--- Example :
+				GiantTortoise.DrawShape(4,"red")
+			</summary>
+			<param name="sides">The number of sides for the shape</param>
+			<param name="color">The color of the line for the shape</param>
+		</member>
+		<member name="M:SmallBasicFun.GiantTortoise.DrawSquare(Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				Creates a square with a given color
+
+				--- Example :
+				GiantTortoise.DrawSquare("purple")
+			</summary> 
+			<param name="color">The color of the line for the shape</param>
+		</member>
+		<member name="T:SmallBasicFun.ColorWheel">
+			<summary>
+				The color wheel allows you to 
+				set up up a color palette with multiple colors that you can use.
+			</summary> 
+		</member>
+		<member name="M:SmallBasicFun.ColorWheel.AddColor(Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				Adds a color to the available colors on the Color Wheel
+
+				--- Example : ColorWheel.AddColor("purple")</summary>
+			<param name="color">
+				the color to add
+			</param>
+		</member>
+		<member name="M:SmallBasicFun.ColorWheel.GetNextColor">
+			<summary>
+				Shows the next color on the Color Wheel
+
+				--- Example :Tortise.SetPenColor(ColorWheel.GetNextColor())</summary>
+			<returns>
+				The next color
+			</returns>
+		</member>
+		<member name="M:SmallBasicFun.ColorWheel.GetRandomColor">
+			<summary>
+				Selects a random color from the colors on the Color Wheel.
+				Useful for when you don't want your colors in any particular order.
+
+				--- Example :Tortise.SetPenColor(ColorWheel.GetRandomColor())</summary>
+			<returns>
+				One of the colors you've added
+			</returns>
+		</member>
+		<member name="M:SmallBasicFun.ColorWheel.RemoveAllColors">
+			<summary>
+				Removes all colors from the Color Wheel. Allowing you to start over.
+
+				--- Example :ColorWheel.RemoveAllColors()</summary>
+		</member>
+		<member name="T:SmallBasicFun.Tortoise">
+			<summary>
+				The Tortoise allows you to draw lines and shapes by moving it around on the canvas
+			</summary>
+		</member>
+		<member name="M:SmallBasicFun.Tortoise.SetPenColor(Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				Sets the color drawn by the Tortoise. 
+				See Also: Colors
+
+				--- Example :Tortoise.SetPenColor("red")</summary>
+			<param name="color">
+				the color of the pen
+			</param>
+		</member>
+		<member name="M:SmallBasicFun.Tortoise.GetPenColor">
+			<summary>
+				Gets color currently drawn by the Tortoise. The default is black.
+
+				--- Example : lastColor = Tortoise.GetPenColor()</summary>
+			<returns>
+				the color of the pen
+			</returns>
+		</member>
+		<member name="M:SmallBasicFun.Tortoise.SetAngle(Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				Turns the Tortoise to face the given angle. 0 is Up, 180 is Down.
+
+				--- Example : Tortoise.SetAngle(45)</summary>
+		</member>
+		<member name="M:SmallBasicFun.Tortoise.SetPenWidth(Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				Sets the width of the pen drawn by the Tortoise. 
+
+				--- Example : Tortoise.SetPenWidth(2)</summary>
+			<param name="widthInPixels">
+				the width of the pen stroke
+			</param>
+		</member>
+		<member name="M:SmallBasicFun.Tortoise.GetPenWidth">
+			<summary>
+				Gets the width of the pen current drawn by the Tortoise. The default is 2.
+
+				--- Example : penWidth = Tortoise.GetPenWidth()</summary>
+			<returns>
+				the width of the pen stroke in pixels
+			</returns>
+		</member>
+		<member name="M:SmallBasicFun.Tortoise.SetSpeed(Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				Sets the speed the Tortoise moves. 
+
+				--- Example : Tortoise.SetSpeed(8)</summary>
+			<param name="speed">
+				The speed from 1 (slowest) to 10 (fastest)
+			</param>
+		</member>
+		<member name="M:SmallBasicFun.Tortoise.Show">
+			<summary>
+				Displays the Tortoise
+
+				--- Example :Tortoise.Show()</summary>
+		</member>
+		<member name="M:SmallBasicFun.Tortoise.Hide">
+			<summary>
+				Completely hides the tortoise, not just his head. Of course, if you
+				move him, you'll still see his trail.
+
+				--- Example :Tortoise.Hide()</summary>
+		</member>
+		<member name="M:SmallBasicFun.Tortoise.Move(Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				Moves the Tortoise Forward the number of pixels specified. 
+
+				--- Example : Tortoise.Move(50)</summary>
+			<param name="lengthInPixels">
+				The number of pixels to move. Negative numbers will move the Tortoise backwards.
+			</param>
+		</member>
+		<member name="M:SmallBasicFun.Tortoise.MoveTo(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				Moves the Tortoise to the X,Y coordinate requested. 
+
+				--- Example : Tortoise.MoveTo(0,0)</summary>
+			<param name="x"> The X coordinate </param>
+			<param name="y"> The Y coordinate </param>
+		</member>
+		<member name="M:SmallBasicFun.Tortoise.Turn(Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				Turns the Tortoise to the right (clockwise) the degrees specified. 
+
+				--- Example : Tortoise.Turn(90)</summary>
+			<param name="degrees">
+				The degrees to turn. Negative numbers will move the Tortoise to the left (counter-clockwise)
+			</param>
+		</member>
+		<member name="M:SmallBasicFun.Tortoise.GetX">
+			<summary>
+				Gets the X location of the Tortoise. The default is 320.
+
+				--- Example :x = Tortoise.GetX()</summary>
+			<returns>The X location of the Tortoise</returns>
+		</member>
+		<member name="M:SmallBasicFun.Tortoise.SetX(Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				Sets the X location of the Tortoise
+				The Tortoise instantly moves there, without drawing a line
+
+				--- Example :Tortoise.SetX(10)</summary>
+			<param name="x">The X location</param>
+		</member>
+		<member name="M:SmallBasicFun.Tortoise.SetY(Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				Sets the Y location of the Tortoise
+				The Tortoise instantly moves there, without drawing a line
+
+				--- Example :Tortoise.SetY(10)</summary>
+			<param name="y">The Y location</param>
+		</member>
+		<member name="M:SmallBasicFun.Tortoise.GetY">
+			<summary>
+				Gets the Y location of the Tortoise. The default is 240.
+
+				--- Example :y = Tortoise.GetY()</summary>
+			<returns>The y location of the Tortoise</returns>
+		</member>
+		<member name="M:SmallBasicFun.Tortoise.GetAngle">
+			<summary>
+				Gets Angle the Tortoise is Point. Up is 0 dergrees. The default is 0 (aiming up).
+
+				--- Example :angle = Tortoise.GetAngle()</summary>
+			<returns>The Angle the Tortoise is Facing</returns>
+		</member>
+		<member name="M:SmallBasicFun.Tortoise.GetSpeed">
+			<summary>
+				Gets the current speed of the Tortoise. The default is 5.
+
+				--- Example :speed = Tortoise.GetSpeed()</summary>
+			<returns>The current speed of the Tortoise</returns>
+		</member>
+		<member name="M:SmallBasicFun.Tortoise.PenUp">
+			<summary>
+				When the pen is up, the tortoise does not leave a trail. 
+
+				--- Example :Tortoise.PenUp()</summary>
+		</member>
+		<member name="M:SmallBasicFun.Tortoise.PenDown">
+			<summary>
+				When the pen is down, the tortoise leaves a trail. 
+
+				--- Example :Tortoise.PenDown()</summary>
+		</member>
+		<member name="T:SmallBasicFun.MessageBox">
+			<summary>
+				This creates a pop up box that you can use to ask for information or tell people stuff.
+			</summary>
+		</member>
+		<member name="M:SmallBasicFun.MessageBox.AskForInput(Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				Prompts the user to enter some text
+
+				--- Example :
+				name = MessageBox.AskForInput("what is your name?")
+			</summary>
+			<param name = "message">the question you want the user to answer</param>
+			<returns>their answer</returns>
+		</member>
+		<member name="M:SmallBasicFun.MessageBox.ShowMessage(Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				Display a message to your end user
+				--- Example :
+				MessageBox.ShowMessage("girl programmers rule!")
+			</summary>
+
+			<param name = "message">the message you want to display</param>
+		</member>
+		<member name="T:SmallBasicFun.Colors">
+			<summary>
+				Every color under the rainbow, and different ways to get them. 
+			</summary>
+		</member>
+		<member name="M:SmallBasicFun.Colors.GetRandomColor">
+			<summary>
+				Picks a color at Random
+
+				--- Example : Tortise.SetPenColor(Colors.GetRandomColor())</summary>
+			<returns>
+				The randomly selected color
+			</returns>
+		</member>
+		<member name="M:SmallBasicFun.Colors.Darken(Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				Makes a color gradually darker
+
+				--- Example : darkenedColor = Colors.Darken("red")</summary>
+			<param name="color">The color you want a darker shade of</param>
+			<returns>
+				The Darker version of the color passed in
+			</returns>
+		</member>
+		<member name="M:SmallBasicFun.Colors.Lighten(Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				Makes a color gradually lighter
+
+				--- Example : lightenedColor = Colors.Lighten("green")</summary>
+			<param name="color">The color you want a lighter shade of</param>
+			<returns>
+				The Lighter version of the color passed in
+			</returns>
+		</member>
+		<member name="P:SmallBasicFun.Colors.IndianRed">
+			<summary>
+				This is the same as "IndianRed"
+			</summary>
+		</member>
+		<member name="P:SmallBasicFun.Colors.Blue">
+			<summary>
+				This is the same as "Blue"
+			</summary>
+		</member>
+		<member name="P:SmallBasicFun.Colors.Purple">
+			<summary>
+				This is the same as "Purple"
+			</summary>
+		</member>
+		<member name="P:SmallBasicFun.Colors.LightCoral">
+			<summary>
+				This is the same as "LightCoral"
+			</summary>
+		</member>
+		<member name="P:SmallBasicFun.Colors.Salmon">
+			<summary>
+				This is the same as "Salmon"
+			</summary>
+		</member>
+		<member name="P:SmallBasicFun.Colors.DarkSalmon">
+			<summary>
+				This is the same as "DarkSalmon"
+			</summary>
+		</member>
+		<member name="P:SmallBasicFun.Colors.LightSalmon">
+			<summary>
+				This is the same as "LightSalmon"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Crimson">
+			<summary>
+				This is the same as "Crimson"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Red">
+			<summary>
+				This is the same as "Red"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.FireBrick">
+			<summary>
+				This is the same as "FireBrick"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.DarkRed">
+			<summary>
+				This is the same as "DarkRed"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Pink">
+			<summary>
+				This is the same as "Pink"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.LightPink">
+			<summary>
+				This is the same as "LightPink"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.HotPink">
+			<summary>
+				This is the same as "HotPink"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.DeepPink">
+			<summary>
+				This is the same as "DeepPink"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.MediumVioletRed">
+			<summary>
+				This is the same as "MediumVioletRed"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.PaleVioletRed">
+			<summary>
+				This is the same as "PaleVioletRed"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Coral">
+			<summary>
+				This is the same as "Coral"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Tomato">
+			<summary>
+				This is the same as "Tomato"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.OrangeRed">
+			<summary>
+				This is the same as "OrangeRed"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.DarkOrange">
+			<summary>
+				This is the same as "DarkOrange"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Orange">
+			<summary>
+				This is the same as "Orange"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Gold">
+			<summary>
+				This is the same as "Gold"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Yellow">
+			<summary>
+				This is the same as "Yellow"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.LightYellow">
+			<summary>
+				This is the same as "LightYellow"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.LemonChiffon">
+			<summary>
+				This is the same as "LemonChiffon"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.LightGoldenrodYellow">
+			<summary>
+				This is the same as "LightGoldenrodYellow"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.PapayaWhip">
+			<summary>
+				This is the same as "PapayaWhip"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Moccasin">
+			<summary>
+				This is the same as "Moccasin"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.PeachPuff">
+			<summary>
+				This is the same as "PeachPuff"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.PaleGoldenrod">
+			<summary>
+				This is the same as "PaleGoldenrod"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Khaki">
+			<summary>
+				This is the same as "Khaki"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.DarkKhaki">
+			<summary>
+				This is the same as "DarkKhaki"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Lavender">
+			<summary>
+				This is the same as "Lavender"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Thistle">
+			<summary>
+				This is the same as "Thistle"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Plum">
+			<summary>
+				This is the same as "Plum"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Violet">
+			<summary>
+				This is the same as "Violet"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Orchid">
+			<summary>
+				This is the same as "Orchid"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Fuchsia">
+			<summary>
+				This is the same as "Fuchsia"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Magenta">
+			<summary>
+				This is the same as "Magenta"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.MediumOrchid">
+			<summary>
+				This is the same as "MediumOrchid"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.MediumPurple">
+			<summary>
+				This is the same as "MediumPurple"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.BlueViolet">
+			<summary>
+				This is the same as "BlueViolet"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.DarkViolet">
+			<summary>
+				This is the same as "DarkViolet"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.DarkOrchid">
+			<summary>
+				This is the same as "DarkOrchid"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.DarkMagenta">
+			<summary>
+				This is the same as "DarkMagenta"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Indigo">
+			<summary>
+				This is the same as "Indigo"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.SlateBlue">
+			<summary>
+				This is the same as "SlateBlue"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.DarkSlateBlue">
+			<summary>
+				This is the same as "DarkSlateBlue"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.MediumSlateBlue">
+			<summary>
+				This is the same as "MediumSlateBlue"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.GreenYellow">
+			<summary>
+				This is the same as "GreenYellow"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Chartreuse">
+			<summary>
+				This is the same as "Chartreuse"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.LawnGreen">
+			<summary>
+				This is the same as "LawnGreen"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Lime">
+			<summary>
+				This is the same as "Lime"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.LimeGreen">
+			<summary>
+				This is the same as "LimeGreen"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.PaleGreen">
+			<summary>
+				This is the same as "PaleGreen"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.LightGreen">
+			<summary>
+				This is the same as "LightGreen"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.MediumSpringGreen">
+			<summary>
+				This is the same as "MediumSpringGreen"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.SpringGreen">
+			<summary>
+				This is the same as "SpringGreen"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.MediumSeaGreen">
+			<summary>
+				This is the same as "MediumSeaGreen"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.SeaGreen">
+			<summary>
+				This is the same as "SeaGreen"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.ForestGreen">
+			<summary>
+				This is the same as "ForestGreen"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Green">
+			<summary>
+				This is the same as "Green"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.DarkGreen">
+			<summary>
+				This is the same as "DarkGreen"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.YellowGreen">
+			<summary>
+				This is the same as "YellowGreen"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.OliveDrab">
+			<summary>
+				This is the same as "OliveDrab"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Olive">
+			<summary>
+				This is the same as "Olive"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.DarkOliveGreen">
+			<summary>
+				This is the same as "DarkOliveGreen"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.MediumAquamarine">
+			<summary>
+				This is the same as "MediumAquamarine"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.DarkSeaGreen">
+			<summary>
+				This is the same as "DarkSeaGreen"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.LightSeaGreen">
+			<summary>
+				This is the same as "LightSeaGreen"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.DarkCyan">
+			<summary>
+				This is the same as "DarkCyan"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Teal">
+			<summary>
+				This is the same as "Teal"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Aqua">
+			<summary>
+				This is the same as "Aqua"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Cyan">
+			<summary>
+				This is the same as "Cyan"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.LightCyan">
+			<summary>
+				This is the same as "LightCyan"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.PaleTurquoise">
+			<summary>
+				This is the same as "PaleTurquoise"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Aquamarine">
+			<summary>
+				This is the same as "Aquamarine"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Turquoise">
+			<summary>
+				This is the same as "Turquoise"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.MediumTurquoise">
+			<summary>
+				This is the same as "MediumTurquoise"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.DarkTurquoise">
+			<summary>
+				This is the same as "DarkTurquoise"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.CadetBlue">
+			<summary>
+				This is the same as "CadetBlue"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.SteelBlue">
+			<summary>
+				This is the same as "SteelBlue"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.LightSteelBlue">
+			<summary>
+				This is the same as "LightSteelBlue"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.PowderBlue">
+			<summary>
+				This is the same as "PowderBlue"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.LightBlue">
+			<summary>
+				This is the same as "LightBlue"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.SkyBlue">
+			<summary>
+				This is the same as "SkyBlue"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.LightSkyBlue">
+			<summary>
+				This is the same as "LightSkyBlue"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.DeepSkyBlue">
+			<summary>
+				This is the same as "DeepSkyBlue"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.DodgerBlue">
+			<summary>
+				This is the same as "DodgerBlue"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.CornflowerBlue">
+			<summary>
+				This is the same as "CornflowerBlue"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.RoyalBlue">
+			<summary>
+				This is the same as "RoyalBlue"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.MediumBlue">
+			<summary>
+				This is the same as "MediumBlue"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.DarkBlue">
+			<summary>
+				This is the same as "DarkBlue"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Navy">
+			<summary>
+				This is the same as "Navy"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.MidnightBlue">
+			<summary>
+				This is the same as "MidnightBlue"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Cornsilk">
+			<summary>
+				This is the same as "Cornsilk"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.BlanchedAlmond">
+			<summary>
+				This is the same as "BlanchedAlmond"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Bisque">
+			<summary>
+				This is the same as "Bisque"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.NavajoWhite">
+			<summary>
+				This is the same as "NavajoWhite"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Wheat">
+			<summary>
+				This is the same as "Wheat"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.BurlyWood">
+			<summary>
+				This is the same as "BurlyWood"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Tan">
+			<summary>
+				This is the same as "Tan"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.RosyBrown">
+			<summary>
+				This is the same as "RosyBrown"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.SandyBrown">
+			<summary>
+				This is the same as "SandyBrown"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Goldenrod">
+			<summary>
+				This is the same as "Goldenrod"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.DarkGoldenrod">
+			<summary>
+				This is the same as "DarkGoldenrod"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Peru">
+			<summary>
+				This is the same as "Peru"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Chocolate">
+			<summary>
+				This is the same as "Chocolate"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.SaddleBrown">
+			<summary>
+				This is the same as "SaddleBrown"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Sienna">
+			<summary>
+				This is the same as "Sienna"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Brown">
+			<summary>
+				This is the same as "Brown"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Maroon">
+			<summary>
+				This is the same as "Maroon"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.White">
+			<summary>
+				This is the same as "White"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Snow">
+			<summary>
+				This is the same as "Snow"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Honeydew">
+			<summary>
+				This is the same as "Honeydew"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.MintCream">
+			<summary>
+				This is the same as "MintCream"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Azure">
+			<summary>
+				This is the same as "Azure"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.AliceBlue">
+			<summary>
+				This is the same as "AliceBlue"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.GhostWhite">
+			<summary>
+				This is the same as "GhostWhite"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.WhiteSmoke">
+			<summary>
+				This is the same as "WhiteSmoke"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Seashell">
+			<summary>
+				This is the same as "Seashell"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Beige">
+			<summary>
+				This is the same as "Beige"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.OldLace">
+			<summary>
+				This is the same as "OldLace"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.FloralWhite">
+			<summary>
+				This is the same as "FloralWhite"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Ivory">
+			<summary>
+				This is the same as "Ivory"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.AntiqueWhite">
+			<summary>
+				This is the same as "AntiqueWhite"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Linen">
+			<summary>
+				This is the same as "Linen"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.LavenderBlush">
+			<summary>
+				This is the same as "LavenderBlush"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.MistyRose">
+			<summary>
+				This is the same as "MistyRose"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Gainsboro">
+			<summary>
+				This is the same as "Gainsboro"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.LightGray">
+			<summary>
+				This is the same as "LightGray"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Silver">
+			<summary>
+				This is the same as "Silver"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.DarkGray">
+			<summary>
+				This is the same as "DarkGray"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Gray">
+			<summary>
+				This is the same as "Gray"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.DimGray">
+			<summary>
+				This is the same as "DimGray"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.LightSlateGray">
+			<summary>
+				This is the same as "LightSlateGray"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.SlateGray">
+			<summary>
+				This is the same as "SlateGray"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.DarkSlateGray">
+			<summary>
+				This is the same as "DarkSlateGray"
+
+			</summary></member>
+		<member name="P:SmallBasicFun.Colors.Black">
+			<summary>
+				This is the same as "Black"
+
+			</summary></member>
+		<member name="M:SmallBasicFun.TicTacToe.PlayPiece(Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				Places a piece on a square (1-9). Which one is best? That's up to you.
+
+				--- Example :TicTacToe.PlayPiece(5)</summary>
+			<param name="square"> Which Square to Play in (1-9)</param>
+		</member>
+		<member name="M:SmallBasicFun.TicTacToe.GetSquareByXY(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				Is [2,3] square #8 or #6? Too hard to find out? Not to worry, this method will do the math for you!
+
+				--- Example :square = TicTacToe.GetSquareByXY(2,3)</summary>
+			<param name="x">The X location (1-3)</param>
+			<param name="y">The Y location (1-3)</param>
+			<returns> The corresponding square location (1-9)</returns>
+		</member>
+		<member name="M:SmallBasicFun.TicTacToe.IsEmpty(Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				You can't play in a square that's already taken, so it's good to ask first. This will tell you if it's too late.
+
+				--- Example :taken = TicTacToe.IsEmpty(3)</summary>
+			<param name="square"> The Square (1-9) you want to know about</param>
+			<returns>true if empty, false if not</returns>
+		</member>
+		<member name="M:SmallBasicFun.TicTacToe.Start">
+			<summary>
+				Get ready! Get Set! Go! Time to start the game, may the program win!
+
+				--- Example :TicTacToe.Start()</summary>
+		</member>
+		<member name="E:SmallBasicFun.TicTacToe.TurnForPlayerX">
+			<summary>
+				Sets the subroutine to be called when it's Player X's turn.
+				Player X always goes first
+
+				--- Example :TicTacToe.TurnForPlayerX = yourComputerPlayer</summary>
+		</member>
+		<member name="E:SmallBasicFun.TicTacToe.TurnForPlayerO">
+			<summary>
+				Sets the subroutine to be called when it's Player O's turn.
+				Player O always goes second
+
+				--- Example :TicTacToe.TurnForPlayerO = yourComputerPlayer</summary>
+		</member>
+		<member name="M:SmallBasicFun.WindowManager.Add(System.Windows.Window)">
+			<summary>
+				Adds Windows to a collection in the context of the currently running program
+			</summary>
+			<param name="window">Window to be tracked for life of current program execution</param>
+			<exception cref="T:System.ArgumentNullException">Throw when window argument is null</exception>
+		</member>
+		<member name="T:SmallBasicFun.ShapeMaker">
+			<summary>
+				Big Shapes, Small Shapes, Circles, Squares
+				from tiny Triangles to dazzling Diamonds
+				You want them, we've got them! Don't settle for 
+				boring shapeless programs, add some of our 
+				spectacular shapes to your programs today!
+			</summary>
+		</member>
+		<member name="M:SmallBasicFun.ShapeMaker.CreateCircle(Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				Creates a circle that you can place on the ProgramWindow
+
+				--- Example : circle = ShapeMaker.CreateCircle(20)</summary>
+			<param name="radiusInPixels"> The radius of the circle in pixels</param>
+			<returns>The Shape you've just created</returns>
+		</member>
+		<member name="M:SmallBasicFun.ShapeMaker.CreateRectangle(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				Creates a rectangle that you can place on the ProgramWindow
+
+				--- Example : box = ShapeMaker.CreateRectangle(30,40)</summary>
+			<param name="width"> The width of the rectangle in pixels</param>
+			<param name="height"> The height of the rectangle in pixels</param>
+			<returns>The Shape you've just created</returns>
+		</member>
+		<member name="M:SmallBasicFun.ShapeMaker.RestoreDefaults">
+			<summary>
+				Restores the default colors and thickness
+
+				--- Example :
+				ShapeMaker.RestoreDefaults()
+			</summary>
+		</member>
+		<member name="M:SmallBasicFun.ShapeMaker.SetOpacity(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				Changes the levels of opacity on a shape.
+				100% Opacity is a completely solid shape.
+				0% Opacity is a completely transparent shape. 
+
+				--- Example :ShapeMaker.SetOpacity(ShapeMaker.CreateCircle(20), 42)</summary>
+			<param name="shape">The shape you want to alter</param>
+			<param name="percentOpaque">The percentage of opacity desired (0-100)</param>
+		</member>
+		<member name="M:SmallBasicFun.ShapeMaker.SetColorForNextShape(Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				Sets the Color for the inside of the next shape you create.
+
+				--- Example :ShapeMaker.SetColorForNextShape("green")</summary>
+			<param name="color">The Color of the next shape</param>
+		</member>
+		<member name="M:SmallBasicFun.ShapeMaker.SetOutlineColorForNextShape(Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				Sets the Color for the outside line of the next shape you create.
+
+				--- Example :ShapeMaker.SetOutlineColorForNextShape("purple")</summary>
+			<param name="color">The Color of outline of the next shape</param>
+		</member>
+		<member name="M:SmallBasicFun.ShapeMaker.RemoveShape(Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				Removes a shape from the Program Window
+
+				--- Example :ShapeMaker.RemoveShape(circle)</summary>
+			<param name="shape">The shape you want to remove</param>
+		</member>
+		<member name="M:SmallBasicFun.ShapeMaker.CenterShapeAt(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				Centers a shape at a given location
+
+				--- Example :ShapeMaker.CenterShapeAt(ShapeMaker.CreateCircle(20), 20, 20)</summary>
+			<param name="shape">The shape you want centered</param>
+			<param name="x">The X coordinate of the center</param>
+			<param name="y">The Y coordinate of the center</param>
+		</member>
+		<member name="T:SmallBasicFun.CurrentFont">
+			<summary>
+				BIG FONTS, small fonts, cRaZy FoNts. Don't call ProgramWindow.DrawText() with just some boring, default Font.
+				Add your personal font favorites here
+			</summary>
+		</member>
+		<member name="M:SmallBasicFun.CurrentFont.SetSize(Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				This sets how big the Font is. The default font size is 12, but you can use anything from 1-100
+				but please don't use size 37, it's a scary size.
+
+				--- Example : CurrentFont.SetSize(42)</summary>
+			<param name="size"> The size of the font</param>
+		</member>
+		<member name="M:SmallBasicFun.CurrentFont.SetColor(Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				This sets the color of the Font. The default font color is blue.
+				Ask the Colors object which colors you can use.
+
+				--- Example : CurrentFont.SetColor(Colors.PeachPuff)</summary>
+			<param name="color"> The color of the font</param>
+		</member>
+		<member name="T:SmallBasicFun.MessageInput">
+			Summary description for InputBox.
+		</member>
+		<member name="M:SmallBasicFun.MessageInput.InitializeComponent">
+			Required method for Designer support - do not modify
+			the contents of this method with the code editor.
+		</member>
+		<member name="T:SmallBasicFun.Timer">
+			<summary>
+				Need something to happen every hour, on the hour?
+				Then Timer is the thing for you!
+				Act now - time is running out!
+			</summary> 
+		</member>
+		<member name="M:SmallBasicFun.Timer.Start(Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				Nothin's gonna' happen, 'till you call this one
+
+				--- Example :Timer.Start(1000)</summary>
+			<param name="intervalInMilliseconds">number of milliseconds between each Tick</param>
+		</member>
+		<member name="M:SmallBasicFun.Timer.Stop">
+			<summary>
+				Hammer Time! This will stop what you started
+
+				--- Example :Timer.Stop()</summary>
+		</member>
+		<member name="E:SmallBasicFun.Timer.Tick">
+			<summary>
+				Invokes your subroutine every time the Timer ticks
+
+				--- Example :
+				Timer.Tick = Tock
+				Sub Tock
+				EndSub
+			</summary>
+		</member>
+		<member name="T:SmallBasicFun.Viewer">
+			<summary>
+				Tools to help you display all types of files
+			</summary>
+		</member>
+		<member name="M:SmallBasicFun.Viewer.DisplayRtfFile(Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				Display Rich Text Files (rtf). These are generally made in wordpad.
+
+				<param name="contents">The contents of the rtf file. This will be saved to a temporary file and then opened</param>
+				--- Example :
+				words["name"] = "Charlie Brown"
+				rtfContents = Parser.MergeRtfFile("c:\myTemplate.rft", words)
+				Viewer.DisplayRtfFile(rtfContents)</summary>
+			<returns>The name of the temporary rtf file created.</returns>
+		</member>
+		<member name="T:SmallBasicFun.Parser">
+			<summary>
+				This will help you {insert words} into your phrases, text and {other words}
+			</summary>
+		</member>
+		<member name="M:SmallBasicFun.Parser.Merge(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				Merges a template with a list of words. The words to be merged need to be wrapped in {currly braces}
+			</summary>
+			<param name="template">The template: "this is a {adjective} template"</param>
+			<param name="wordList">The wordList:  wordList["simple"] </param>
+			<returns>The result of merging the template with the word list</returns>
+			--- Example :wordList["adjective"] = "smelly"
+			wordList["bodyPart"] = "butt"
+			output = Parser.Merge("You have a {adjective} {bodyPart}!", wordList)
+
+		</member>
+		<member name="M:SmallBasicFun.Parser.MergeRtfFile(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				The merges a template in the form of a Rich Text File (rtf), usually created using WordPad.
+				It gives you back the rtf text, which you can display using the Viewer
+
+				<param name="templateFile">the name of the rtf file (needs the full path)</param>
+				<param name="wordList">The wordList:  wordList["simple"] </param>
+				--- Example :
+				words["name"] = "Charlie Brown"
+				rtfContents = Parser.MergeRtfFile("c:\myTemplate.rft", words)
+				Viewer.DisplayRtfFile(rtfContents)</summary>
+			<returns>The merged output</returns>
+		</member>
+		<member name="T:SmallBasicFun.ProgramWindow">
+			<summary>
+				This is the main window of your program.
+				This is where the turtle, lines, shapes and images will appear.
+			</summary>
+		</member>
+		<member name="M:SmallBasicFun.ProgramWindow.DrawBackgroundImage(Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				Draws an image, resized to the current dimensions of the window
+
+				--- Example : ProgramWindow.DrawBackgroundImage(Flickr.GetPictureOfMoment())</summary>
+			<param name="image"> The image to be drawn</param>
+		</member>
+		<member name="M:SmallBasicFun.ProgramWindow.Clear">
+			<summary>
+				Wipes the window clean.
+
+				--- Example : ProgramWindow.Clear()</summary>
+		</member>
+		<member name="M:SmallBasicFun.ProgramWindow.DrawText(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				Draws some words on the Program Window using the settings from CurrentFont (size, etc...)
+
+				--- Example : ProgramWindow.DrawText("Small Basic Rocks",0,0)</summary>
+			<param name="text"> The words you want to write</param>
+			<param name="x"> The X coordinate of top left corner of the words </param>
+			<param name="y"> The Y coordinate of top left corner of the words</param>
+		</member>
+		<member name="M:SmallBasicFun.ProgramWindow.GetMouseX">
+			<summary>
+				Gets the location of the Mouse relative to the Top Left of the Program Window.
+
+				--- Example :x = ProgramWindow.GetMouseX()</summary>
+			<returns> The x coordinate</returns>
+		</member>
+		<member name="M:SmallBasicFun.ProgramWindow.GetMouseY">
+			<summary>
+				Gets the location of the Mouse relative to the Top Left of the Program Window.
+
+				--- Example :y = ProgramWindow.GetMouseY()</summary>
+			<returns> The y coordinate</returns>
+		</member>
+		<member name="M:SmallBasicFun.ProgramWindow.SetBackgroundColor(Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				Changes the background of the Program Window to the color of your choice.
+
+				--- Example :ProgramWindow.SetBackgroundColor("Red")</summary>
+			<param name="color">The color you want the background to be.</param>
+		</member>
+		<member name="M:SmallBasicFun.ProgramWindow.GetPixelColor(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				Retrieves the current color of the pixel at the (x,y) location.
+
+				--- Example :color = ProgramWindow.GetPixelColor(48, 34)</summary>
+			<param name="x">The X coordinate of the pixel</param>
+			<param name="y">The Y coordinate of the pixel</param>
+			<returns>The color of the pixel</returns>
+		</member>
+		<member name="M:SmallBasicFun.ProgramWindow.GetWindowWidth">
+			<summary>
+				Gets the current width of the Window in pixels
+
+				--- Example :w = ProgramWindow.GetWindowWidth()</summary>
+			<returns>width in pixels</returns>
+		</member>
+		<member name="M:SmallBasicFun.ProgramWindow.GetWindowHeight">
+			<summary>
+				Gets the current height of the Window in pixels
+
+				--- Example :w = ProgramWindow.GetWindowHeight()</summary>
+			<returns>height in pixels</returns>
+		</member>
+		<member name="M:SmallBasicFun.ProgramWindow.TakeScreenShot">
+			<summary>
+				Prints a picture of the current Program Window. The file name is defined by the proctor.txt file in your lib directory.
+
+				--- Example :ProgramWindow.TakeScreenShot()</summary>
+		</member>
+		<member name="M:SmallBasicFun.ProgramWindow.DisplayScreenShotLocation">
+			<summary>
+				Opens a MessageBox and calls ShowMessage with the location of the FileName and ScreenShot location path
+			</summary>
+		</member>
+		<member name="M:SmallBasicFun.ProgramWindow.ConcatentateDisplayScreenShotLocation">
+			<summary>
+				Outputs the location of the FileName and ScreenShot location path 
+			</summary>
+			<returns></returns>
+		</member>
+		<member name="M:SmallBasicFun.ProgramWindow.Show">
+			<summary>
+				Displays the Program Window.
+
+				--- Example :ProgramWindow.Show()</summary>
+		</member>
+		<member name="M:SmallBasicFun.ProgramWindow.SetTextColor(Microsoft.SmallBasic.Library.Primitive)">
+			<summary>
+				Changes the color the Text is written in.
+
+				--- Example :ProgramWindow.SetTextColor(Colors.Tomato)</summary>
+		</member>
+		<member name="E:SmallBasicFun.ProgramWindow.MouseClicked">
+			<summary>
+				Invoke your subroutine each time the mouse is clicked
+
+				--- Example :
+				ProgramWindow.MouseClicked = Cheese
+				Sub Cheese
+				EndSub
+			</summary>
+		</member>
+	</members>
+</doc>

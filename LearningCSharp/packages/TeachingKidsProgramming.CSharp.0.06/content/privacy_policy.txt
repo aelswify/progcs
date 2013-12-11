@@ -1,0 +1,23 @@
+﻿Teaching Kids Programming Privacy Policy
+Last Updated: March 11, 2013
+Welcome to the courseware created  by Teaching Kids Programming, a designated project of the 501(c)(3) organization Mona Foundation. Teaching Kids Programming values the privacy of our members and others who visit and use our courseware (individually, "You" or collectively, "Users"). We take your privacy seriously and make it a priority to protect personally identifiable information that we obtain from and about individuals both online and off-line.
+This Privacy Policy describes what information we gather from you, how we use that information, and what we do to protect it. By using the you expressly consent to the information handling practices described in this policy. If you do not want information about you to be used in the manner set forth in this Privacy Policy, please do not use the courseware.
+The Information Teaching Kids Programming Collects
+o "Automatically Collected" Information:ˇWhen you use the courseware, we may automatically record certain information from your activities by using different types of technology, including standard log files, API calls, and your courseware source code. This "automatically collected" information may include your Internet Protocol (IP) address, internet service provider (ISP), operating system and the dates and times that you use the courseware. Additionally, we may record certain information regarding your use the courseware, such as the number of problems you have attempted, your solutions, and the amount of time spent to complete a problem.
+o Location Information: We may collect and store information about your location if you enable your computer or mobile device to send us location information. You may be able to change the settings on your computer or mobile device to prevent it from providing us with such information.
+
+The Way Teaching Kids Programming Uses Information
+o Teaching Kids Programming uses the information that you provide or that we collect in order to establish and enhance our relationship with you. Teaching Kids Programming generally uses the information you provide or that we collect to operate, maintain, enhance, and provide all of the features and services found on the courseware. 
+o Teaching Kids Programming uses all of the information that you provide or that we collect from Users to understand and analyze the usage trends and preferences of our Users, to improve the way the courseware works and looks, and to create new features and functionality.
+When Teaching Kids Programming Discloses Information
+o Aggregate Information:ˇTeaching Kids Programming discloses automatically collected and other aggregate non-personally-identifiable information to interested third parties to assist such parties in understanding the usage, viewing, and demographic patterns for certain programs, content, services, advertisements, promotions, and/or functionality on the courseware.
+
+Changes and Updates to this Privacy Policy
+We reserve the right to change the privacy policy at our sole discretion. Teaching Kids Programming users will be informed of any such change by us posting a new privacy policy in this file and the effective date of any change of privacy policy will be clearly marked. We will not use any personally identifiable information of yours in ways that are materially different from the ones described in this Privacy Policy without also providing notification of such practices and obtaining consent to any such different uses. If we make material changes to this policy, we will notify you here, by email, or by means of a notice in this file.
+Contact Information
+Please contact Teaching Kids Programming with any questions or comments about this Privacy Policy, by email at info@monafoundation.org
+Or mail at 
+TeachingKidsProgramming
+c/o The Mona Foundation
+ 218 Main Street, Suite 404
+Kirkland, WA 98033

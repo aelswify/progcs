@@ -1,0 +1,9 @@
+D:\Dev\projects\LearningCSharp\LearningCSharp\bin\Debug\LearningCSharp.exe.config
+D:\Dev\projects\LearningCSharp\LearningCSharp\obj\Debug\LearningCSharp.csprojResolveAssemblyReference.cache
+D:\Dev\projects\LearningCSharp\LearningCSharp\bin\Debug\LearningCSharp.exe
+D:\Dev\projects\LearningCSharp\LearningCSharp\bin\Debug\LearningCSharp.pdb
+D:\Dev\projects\LearningCSharp\LearningCSharp\bin\Debug\SmallBasicFun.dll
+D:\Dev\projects\LearningCSharp\LearningCSharp\bin\Debug\SmallBasicLibrary.dll
+D:\Dev\projects\LearningCSharp\LearningCSharp\bin\Debug\SmallBasicFun.xml
+D:\Dev\projects\LearningCSharp\LearningCSharp\obj\Debug\LearningCSharp.exe
+D:\Dev\projects\LearningCSharp\LearningCSharp\obj\Debug\LearningCSharp.pdb
