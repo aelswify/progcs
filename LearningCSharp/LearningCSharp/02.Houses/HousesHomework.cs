@@ -2,7 +2,7 @@
 using Microsoft.SmallBasic.Library;
 using SmallBasicFun;
 
-namespace Houses
+namespace LearningCSharp
 {
 	public class HousesHomework
 	{

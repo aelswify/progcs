@@ -6,10 +6,18 @@ using System.Threading.Tasks;
 
 namespace LearningCSharp
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
+            // SimpleSquare.Main();
+            // SimpleSquareQuiz.Main();
+            // Houses.Main();
+            // HousesQuiz.Main();
+            // Flower.Main();
+            // SpiderWeb.Main();
+            // CrazyPentagon.Main();
+            // HiLowGame.Main();
         }
     }
 }

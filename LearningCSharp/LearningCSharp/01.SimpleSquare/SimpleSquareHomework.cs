@@ -2,7 +2,7 @@
 using Microsoft.SmallBasic.Library;
 using SmallBasicFun;
 
-namespace SimpleSquare
+namespace LearningCSharp
 {
 	public class SimpleSquareHomework
 	{

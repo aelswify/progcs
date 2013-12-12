@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>SimpleSquare.SimpleSquare</StartupObject>
+    <StartupObject>LearningCSharp.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="SmallBasicFun">
@@ -51,11 +51,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="01.SimpleSquare\SimpleSquare.cs" />
-    <Compile Include="01.SimpleSquare\SimpleSquareHomework.cs" />
-    <Compile Include="01.SimpleSquare\SimpleSquareQuiz.cs" />
+    <Compile Include="01.SimpleSquare\SimpleSquareQuiz.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="02.Houses\Houses.cs" />
-    <Compile Include="02.Houses\HousesHomework.cs" />
-    <Compile Include="02.Houses\HousesQuiz.cs" />
+    <Compile Include="02.Houses\HousesQuiz.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="03.Flower\Flower.cs" />
+    <Compile Include="04.SpiderWeb\SpiderWeb.cs" />
+    <Compile Include="05.CrazyPentagon\CrazyPentagon.cs" />
+    <Compile Include="06.HiLowGame\HiLowGame.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
