@@ -1,8 +1,0 @@
-C:\code\TeachingKidsProgramming\SimpleSquare\bin\Debug\SimpleSquare.exe
-C:\code\TeachingKidsProgramming\SimpleSquare\bin\Debug\SimpleSquare.pdb
-C:\code\TeachingKidsProgramming\SimpleSquare\bin\Debug\SmallBasicFun.dll
-C:\code\TeachingKidsProgramming\SimpleSquare\bin\Debug\SmallBasicLibrary.dll
-C:\code\TeachingKidsProgramming\SimpleSquare\bin\Debug\SmallBasicFun.xml
-C:\code\TeachingKidsProgramming\SimpleSquare\obj\Debug\SimpleSquare.csprojResolveAssemblyReference.cache
-C:\code\TeachingKidsProgramming\SimpleSquare\obj\Debug\SimpleSquare.exe
-C:\code\TeachingKidsProgramming\SimpleSquare\obj\Debug\SimpleSquare.pdb
